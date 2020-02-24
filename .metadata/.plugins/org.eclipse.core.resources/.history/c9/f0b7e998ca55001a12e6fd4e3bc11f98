@@ -1,0 +1,50 @@
+import java.security.SecureRandom;
+import java.util.Scanner;
+
+public class CAI1 
+{
+	public static void main(String[] args)
+	{
+	//Declare ints
+	int x = 0;
+	int y = 0;
+	/* Declare random to generate random number based on what int 
+	is passed within parameters. */
+       SecureRandom random = new SecureRandom();	
+	//Declare scanner to receive entered data
+	   Scanner scanner = new Scanner(System.in);
+       
+    //Inits two random ints
+       x = random.nextInt(10);
+       y = random.nextInt(10);
+       
+       System.out.printf("What is %d times %d?\n", x, y);
+    
+       //Inits int product, which is equal to the product of x * y. 
+       int product = x * y;
+       //Inits int answer, which will receive the student's answer
+       int answer = 0;
+       
+       //Allows program to run until correct answer is given
+       while(true)
+       {
+    	   System.out.printf("\n> ");
+    	   
+    	   //Sets answer to student's entry 
+    	   answer = scanner.nextInt();
+    	   
+    	   if (answer == product)
+    	   {
+    		   System.out.printf("Very good!\n");
+    		   break;
+    	   }
+    	   else 
+    	   {
+    		   System.out.printf("No, please try again.");
+    	   }
+       }
+       
+
+	}
+	
+}

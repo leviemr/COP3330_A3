@@ -1,0 +1,42 @@
+import java.security.SecureRandom;
+import java.util.Scanner;
+
+public class CAI1 
+{
+	public static void main(String[] args)
+	{ 
+		quiz();
+	}
+	
+	//Quiz contains all calls to make program run
+	public static void quiz() {
+	//Declare ints
+	int x = 0;
+	int y = 0;
+	/* Declare random to generate random number based on what int 
+	is passed within parameters. */
+       SecureRandom random = new SecureRandom();	
+       
+    //Inits two random ints
+       x = random.nextInt(10);
+       y = random.nextInt(10);
+       
+	}
+	
+	public static int askQuestion(int x, int y)
+	{
+		System.out.printf("What is %d times %d?\n", x, y);
+		return x * y;
+	}
+	
+	public static int readResponse()
+	{
+		//Declare scanner to receive entered data
+		  Scanner scanner = new Scanner(System.in);
+		//Declares int answer and sets it to received value
+		  int answer = scanner.nextInt();
+		//Returns answer
+		  return answer;
+	}
+	
+}
