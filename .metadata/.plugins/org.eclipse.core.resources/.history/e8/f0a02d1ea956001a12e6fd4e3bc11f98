@@ -4,7 +4,7 @@ class SavingsAccount
 	//Create class savings account with static variable aIR to store for all account holders
 	//Each obj contains private instance savbal 
 	public static double annualInterestRate = 0.0;
-	private double savingsBalance = 0.0;
+	private double savingsBalance = 0;
 	
 	//method calcmonint to calc monthly interest by multiplying savbal by aIR div by 12
 	public void calculateMonthlyInterest()

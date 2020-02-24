@@ -26,7 +26,6 @@ public class SavingsAccountTest
 	}
 	//set aIR to 5%, calc the next month's interest and print for both savers
 	System.out.printf("-------------------------\n");
-	SavingsAccount.modifyInterestRate(5.0);
 	System.out.printf("Month %d ", month);
 	saver1.displayBalance();
 	System.out.printf("  ");
